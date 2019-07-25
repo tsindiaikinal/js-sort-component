@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS-component сортировки каталога серверов</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="app">
+        <div class="navbar">
+          <div class="navbar__control">
+            <span class="navbar__control-title">Control</span>
+          </div>
+          <div class="navbar__menu-container menu-hover" id="menu-container">
+            <div class="navbar__menu">
+              <span class="navbar__menu-arrow">Menu</span>
+            </div>
+            <ul class="menu">
+              <li class="menu__item" id="menu-table">table</li>
+              <li class="menu__item">add</li>
+              <li class="menu__item">settings</li>
+            </ul>
+          </div>
+        </div>
+        <section class="catalog">
+          <nav>
+            <div class="nav-container-1">
+              <div class="navbar-gamburger" id="gamburger">|||</div>
+              <div class="routes" id="routes">
+                <span class="logo"><a href="#" class="icon-paw"></a> </span>
+                <span class="routes__home">Contol panel</span>
+              </div>
+            </div>
+            <div class="nav-container-2">
+              <button type="button" id="prev">Previous</button>
+              <button type="button" id="next">Next</button>
+            </div>
+          </nav>
+          <section class="catalog__content">
+            <table id="data-json"></table>
+          </section>
+        </section>
+      </div>
+    </div>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
